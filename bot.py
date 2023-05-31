@@ -15,8 +15,8 @@ import pyrogram
 
 
 if __name__ == "__main__" :
-    if not os.path.isdir(sample.config.DOWNLOAD_LOCATION):
-        os.makedirs(sample.config.DOWNLOAD_LOCATION)
+    if not os.path.isdir(sample_config.DOWNLOAD_LOCATION):
+        os.makedirs(sample_config.DOWNLOAD_LOCATION)
     plugins = dict(
         root="plugins"
     )
