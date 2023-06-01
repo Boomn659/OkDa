@@ -17,7 +17,7 @@ import pyrogram
 if __name__ == "__main__" :
 
         os.makedirs(Config.DOWNLOAD_LOCATION)
-    plugins = dict(
+    plugins = dict( 
         root="plugins"
     )
     app = pyrogram.Client(
