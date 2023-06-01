@@ -17,15 +17,15 @@ import pyrogram
 if __name__ == "__main__" :
 
         os.makedirs(Config.DOWNLOAD_LOCATION)
-    plugins = dict( 
+    plugins = dict[ 
         root="plugins"
-    )
-    app = pyrogram.Client(
+    ]
+    app = pyrogram.Client[
         "RenameBot",
         bot_token=Config.TG_BOT_TOKEN,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         plugins=plugins
-    )
+    ]
     Config.AUTH_USERS.add(861055237)
     app.run()
